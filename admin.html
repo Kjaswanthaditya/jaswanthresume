@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admin Resume - KONATHALA JASWANTH ADITYA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KONATHALA JASWANTH ADITYA - Admin Resume</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -24,7 +24,6 @@
       text-align: center;
       font-size: 2.8rem;
       color: #4e54c8;
-      margin-bottom: 10px;
     }
     .section-title {
       font-size: 1.5rem;
@@ -32,7 +31,6 @@
       color: white;
       padding: 10px 20px;
       border-radius: 8px;
-      margin-bottom: 10px;
     }
     h3 {
       color: #4e54c8;
@@ -40,10 +38,6 @@
     }
     a {
       color: #6c63ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     ul {
       padding-left: 20px;
@@ -53,12 +47,9 @@
       padding: 4px;
       border-radius: 4px;
     }
-    #editButton {
+    #editButton, #saveButton {
       position: fixed;
       bottom: 30px;
-      right: 30px;
-      background: linear-gradient(45deg, #00c9ff, #92fe9d);
-      color: #333;
       padding: 14px 22px;
       border: none;
       border-radius: 50px;
@@ -68,148 +59,50 @@
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
-    #editButton:hover {
-      transform: scale(1.05);
-    }
-    .contact-info ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 30px 0;
-    }
-    .contact-info li {
-      padding: 5px 0;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    #ai-tools {
-      display: none;
-      position: fixed;
-      bottom: 90px;
+    #editButton {
       right: 30px;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      z-index: 999;
+      background: linear-gradient(45deg, #00c9ff, #92fe9d);
+      color: #333;
     }
-    #ai-tools input[type="file"] {
-      margin-top: 10px;
+    #saveButton {
+      left: 30px;
+      background: #ffb347;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <div class="container" id="resumeContent">
-    <h1 contenteditable="false">KONATHALA JASWANTH ADITYA</h1>
-    <div class="contact-info" contenteditable="false">
+  <div class="container" id="resumeContent" contenteditable="false">
+    <h1>KONATHALA JASWANTH ADITYA</h1>
+    <!-- Add your editable content here -->
+    <div>
+      <h3 class="section-title">Contact Info</h3>
       <ul>
-        <li><strong>Location:</strong> Anakapalli</li>
-        <li><strong>Phone:</strong> +91 9182347766</li>
         <li><strong>Email:</strong> <a href="mailto:kjaswanthaditya@gmail.com">kjaswanthaditya@gmail.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kjaswanthaditya" target="_blank">LinkedIn Profile</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/kjaswanthaditya" target="_blank">GitHub Profile</a></li>
-      </ul>
-    </div>
-
-    <div class="section" contenteditable="false">
-      <div class="section-title">Education</div>
-      <p><strong>DADI Institute of Engineering and Technology</strong>, Anakapalli</p>
-      <p>B.Tech in Computer Science and Engineering (Aug 2019 - May 2023)</p>
-      <p><strong>Sri Chaitanya Junior College</strong>, Anakapalli</p>
-      <p>Intermediate Education (Jul 2017 - Mar 2019)</p>
-      <p><strong>D.A.V Public School</strong>, Anakapalli</p>
-      <p>Secondary Education (Jun 2016 - Apr 2017)</p>
-    </div>
-
-    <div class="section" contenteditable="false">
-      <div class="section-title">Experience</div>
-      <h3>Transaction Risk Investigator @ Amazon</h3>
-      <p>Jul 2024 – Present</p>
-      <ul>
-        <li>Investigate suspicious buyer activity including DNR claims and ensure accurate decisions within SLAs.</li>
-        <li>Follow standard operating procedures while maintaining high attention to detail.</li>
-        <li>Provide support to reduce fraud and protect Amazon customers and businesses.</li>
-      </ul>
-
-      <h3>Internship @ RINL Vizag Steelplant</h3>
-      <p>Full Stack Development (Jan 2023 – Mar 2023)</p>
-      <ul>
-        <li>Built web apps to optimize internal tasks using HTML, CSS, JS.</li>
-        <li>Worked with cross-teams to gather and implement requirements.</li>
-        <li>Enhanced UI/UX with intuitive design improvements.</li>
-        <li>Debugged and resolved bugs ensuring functionality.</li>
-      </ul>
-
-      <h3>Internship @ Microsoft</h3>
-      <p>House Data Prediction - Bengaluru (Jul 2022 – Sep 2022)</p>
-      <ul>
-        <li>Built ML models for Bangalore real estate price prediction.</li>
-        <li>Applied algorithms like Linear Regression, Decision Tree, Random Forest.</li>
-        <li>Used RMSE and MAE for performance metrics.</li>
-        <li>Preprocessed large datasets and visualized results.</li>
-      </ul>
-    </div>
-
-    <div class="section" contenteditable="false">
-      <div class="section-title">Projects</div>
-      <h3>Malware Detection in Windows Using ML Techniques</h3>
-      <p>(Jan 2023 – Apr 2023)</p>
-      <ul>
-        <li>Created models to identify/classify malware on Windows.</li>
-        <li>Used Python, scikit-learn, and TensorFlow for development.</li>
-        <li>Performed feature extraction and dataset analysis.</li>
-      </ul>
-    </div>
-
-    <div class="section" contenteditable="false">
-      <div class="section-title">Certifications</div>
-      <ul>
-        <li>Oracle Cloud Infrastructure – Oracle</li>
-        <li>Python Programming Workshop – APSSDC</li>
-        <li>Industry 4.0 & IIOT – NPTEL</li>
-        <li>Azure Fundamentals – Microsoft</li>
-        <li>Azure Data Fundamentals – Microsoft</li>
-      </ul>
-    </div>
-
-    <div class="section" contenteditable="false">
-      <div class="section-title">Skills</div>
-      <ul>
-        <li><strong>Languages:</strong> C, C++, Python, Java</li>
-        <li><strong>Web:</strong> HTML, CSS, React</li>
-        <li><strong>Design:</strong> Figma, Photoshop</li>
-        <li><strong>Editing:</strong> After Effects, Premiere Pro</li>
-        <li><strong>Soft Skills:</strong> Quick Learner</li>
-      </ul>
-    </div>
-
-    <div class="section" contenteditable="false">
-      <div class="section-title">Hobbies</div>
-      <ul>
-        <li>Painting</li>
-        <li>Gaming</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Kjaswanthaditya" target="_blank">github.com/Kjaswanthaditya</a></li>
       </ul>
     </div>
   </div>
 
-  <button id="editButton">Toggle Edit Mode</button>
-  <div id="ai-tools">
-    <strong>AI Edit Panel</strong><br>
-    <label for="uploadFile">Attach File:</label>
-    <input type="file" id="uploadFile" />
-  </div>
+  <button id="editButton">Toggle Edit</button>
+  <button id="saveButton">Save Resume</button>
 
   <script>
     const editButton = document.getElementById('editButton');
-    const editableSections = document.querySelectorAll('[contenteditable]');
-    const aiTools = document.getElementById('ai-tools');
+    const saveButton = document.getElementById('saveButton');
+    const resume = document.getElementById('resumeContent');
 
     editButton.addEventListener('click', () => {
-      editableSections.forEach(section => {
-        const current = section.getAttribute('contenteditable');
-        section.setAttribute('contenteditable', current === 'true' ? 'false' : 'true');
-      });
-      aiTools.style.display = aiTools.style.display === 'block' ? 'none' : 'block';
+      const editable = resume.getAttribute('contenteditable') === 'true';
+      resume.setAttribute('contenteditable', !editable);
+    });
+
+    saveButton.addEventListener('click', () => {
+      const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+      const link = document.createElement('a');
+      link.download = 'jaswanth_resume_admin.html';
+      link.href = URL.createObjectURL(blob);
+      link.click();
     });
   </script>
 </body>
